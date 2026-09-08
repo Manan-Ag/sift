@@ -1,10 +1,23 @@
 # Sift
 
+[![CI](https://github.com/Manan-Ag/sift/actions/workflows/ci.yml/badge.svg)](https://github.com/Manan-Ag/sift/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 Sift turns webpages into structured, source-backed comparisons. This repository contains the React workspace, Manifest V3 Chrome extension, shared TypeScript domain package, Supabase database and Edge Functions, and Gemini provider integration described in `project_instructions_ aggregator.md`.
+
+**[Try the live demo](https://sift-six-phi.vercel.app)** — choose **Explore the demo** to use a fictional comparison workspace without creating an account or making AI calls.
+
+## Highlights
+
+- Capture one webpage at a time from the Chrome side panel with explicit user action.
+- Turn saved pages into structured comparison rows with Gemini and source evidence.
+- Add fields, backfill saved items, filter in natural language, edit values, and export CSV or XLSX.
+- Keep user data private with Supabase Auth, owner-scoped Row Level Security, private Storage, and authenticated Edge Functions.
+- Continue browsing after capture while extraction completes in the background.
 
 ## Try it locally
 
-Requires Node **22.12+** and pnpm **11.19.0**. This machine also has a compatible Node runtime at `/Users/manan/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node`; the system Node 20.11 is too old for the selected Vite version.
+Requires Node **22.12+** and pnpm **11.19.0**.
 
 ```sh
 pnpm install
@@ -68,4 +81,12 @@ The extension test adds a localhost-only host permission to a disposable test co
 
 ## Current delivery boundary
 
-This is a tested local implementation connected to a hosted Supabase project. The migrations and Gemini secret are configured, all seven Edge Functions are deployed, and authenticated capture, private snapshot storage, Gemini extraction, background status updates, duplicate handling, and the real Chrome toolbar flow have been exercised. Cross-account isolation and a broader extraction-accuracy benchmark still need live acceptance testing. Cloudflare deployment is not configured yet. See `docs/STATUS.md` for the remaining work.
+This implementation is deployed on Vercel and connected to a hosted Supabase project. The migrations and Gemini secret are configured, all seven Edge Functions are deployed, and authenticated capture, private snapshot storage, Gemini extraction, background status updates, duplicate handling, and the real Chrome toolbar flow have been exercised. Cross-account isolation and a broader extraction-accuracy benchmark still need live acceptance testing. See `docs/STATUS.md` for the remaining work.
+
+## Contributing and security
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request and [SECURITY.md](SECURITY.md) for private vulnerability reporting. Participation is governed by the [Code of Conduct](CODE_OF_CONDUCT.md).
+
+## License
+
+Sift is available under the [MIT License](LICENSE).

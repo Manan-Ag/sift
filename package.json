@@ -2,6 +2,15 @@
   "name": "sift",
   "private": true,
   "version": "0.1.0",
+  "license": "MIT",
+  "homepage": "https://sift-six-phi.vercel.app",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Manan-Ag/sift.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Manan-Ag/sift/issues"
+  },
   "type": "module",
   "packageManager": "pnpm@11.19.0",
   "engines": {
