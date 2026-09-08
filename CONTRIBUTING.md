@@ -13,7 +13,7 @@ documentation improvements, and tested fixes are welcome.
 
 ## Local setup
 
-Sift requires Node.js 22.12 or newer and pnpm 11.19.0.
+Sift requires Node.js 22.13 or newer and pnpm 11.19.0.
 
 ```sh
 pnpm install

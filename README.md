@@ -17,7 +17,7 @@ Sift turns webpages into structured, source-backed comparisons. This repository 
 
 ## Try it locally
 
-Requires Node **22.12+** and pnpm **11.19.0**.
+Requires Node **22.13+** and pnpm **11.19.0**.
 
 ```sh
 pnpm install
